@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    background: #282c34;
+    color: white;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #61dafb; /* Cor de destaque ao passar o mouse */
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+    opacity: 0; /* Inicia invisível */
+    transform: translateY(20px); /* Inicia levemente abaixo */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Transição suave */
+}
+
+section.visible {
+    opacity: 1; /* Torna visível */
+    transform: translateY(0); /* Move para a posição original */
+}
+
+h2 {
+    color: #333;
+}
+
+.project {
+    margin: 15px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background: white;
+    transition: transform 0.2s;
+}
+
+.project:hover {
+    transform: scale(1.05); /* Aumenta ao passar o mouse */
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #282c34;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
